@@ -2,7 +2,9 @@
 layout: post 
 title: "Matplotlib"
 ---
+
 Here are three example plots using matplotlib. Each function takes in arguments of type list.
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -42,3 +44,4 @@ def plot_cc(cc_list):
   plt.ylabel('P(x <= c)')
   plt.show()
 ```
+
