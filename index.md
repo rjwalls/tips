@@ -8,13 +8,14 @@ This page is just a collection of random commands and such that
 others) have found useful. If you'd like to contribute, then send me a pull
 request on [Github](https://github.com/rjwalls/tips).
 
-### R
-
-Write delimited file without quotes, row, and column labels:
-
-```r
-df %>% write.table('gtlds.txt', row.names=FALSE, col.names=FALSE, quote=FALSE)
-```
-
+<ul class="news list-unstyled">
+{% for post in site.posts %}
+  <li>
+    <h3>{{ post.title }}</h3>
+    {{ post.content | strip_html | truncatewords: 40}}
+    <a href="{{ post.url }}">Read more.</a>
+  </li>
+{% endfor %}
+</ul>
 
 

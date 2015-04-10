@@ -12,7 +12,7 @@ redcarpet:
 pygments: true
 
 # The path structure for blog posts.
-permalink: /blog/:year/:month/:day/:title.html
+permalink: /:title.html
 
 # Sections on the "people" page.
 roles:
