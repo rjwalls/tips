@@ -25,7 +25,6 @@ def plot_assort(x_list, avg_list):
   fig.suptitle('Assortativity')
   plt.xlabel('Degree')
   plt.ylabel('Average neighbor degree')
-  #plt.ylim([0,max(y)])
   plt.yscale('log', nonposy='clip')
   plt.xscale('log', nonposy='clip')
   plt.show()
