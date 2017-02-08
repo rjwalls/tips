@@ -1,0 +1,17 @@
+---
+layout: post
+title: "VirtualBox"
+---
+
+### Shared Folders
+
+I can never remember how to get shared folders working correctly in Dropbox. With this snippet, now I don't have to.
+
+```bash
+#Step 0: step up the shared folder in the virtualbox settings.
+# Make sure to select "automount". This will place mount the folder at /media/sf_SHARE_NAME
+#Step 1: add yourself to the vboxsf group
+sudo usermod -a -G vboxsf rjwalls
+```
+
+Everything should work as expected now.
