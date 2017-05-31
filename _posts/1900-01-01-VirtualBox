@@ -14,4 +14,4 @@ I can never remember how to get shared folders working correctly in Dropbox. Wit
 sudo usermod -a -G vboxsf rjwalls
 ```
 
-Everything should work as expected now.
+After a restart, everything should work as expected.
