@@ -15,3 +15,9 @@ sudo usermod -a -G vboxsf rjwalls
 ```
 
 After a restart, everything should work as expected.
+
+### Using SSH
+
+On the host, set up a host-only network via virtualbox. Note, you have to use the preferences pane for virtualbox, not the settings pane for individual machines. Once the network is setup, go into the network settings for the VM and create a second network adapter that uses the host-only network you just set up. You can test that this worked on the guest by using `ifconfig` and looking for the adapter. It should have an IP in the range 192.168.56.1XX. 
+
+On the guest, set a static IP for your new network adapter---IP 192.168.56.10 and Netmask 255.255.255.0 work fine. Now we need to install OpenSSH server: `sudo apt-get install openssh-server`. After that, copy your public key into `~/.ssh/authorized_keys`. Finally, restart.
